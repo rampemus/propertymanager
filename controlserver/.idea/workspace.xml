@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c19eae4c-0d14-4adc-a386-4f42d0545cc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Harjoitustyö 2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Harjoitustyö 2.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RemoteServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RemoteServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RemoteServer/src/RMIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RemoteServer/src/RMIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RemoteServer/src/RemoteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RemoteServer/src/RemoteServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RemoteServer/src/WWWServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RemoteServer/src/WWWServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/controlserver/ControlServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/controlserver/ControlServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/controlserver/RMIServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/controlserver/RMIServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/controlserver/lightswitchServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/controlserver/lightswitchServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/controlserver/remoteInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/controlserver/remoteInterfaceEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/controlserver/server.policy" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/controlserver/server.policy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControlServer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlServer.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ControlServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ControlServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lightswitchServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lightswitchServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.policy" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.policy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lightswitch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lightswitch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lightswitch/src/Lightswitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lightswitch/src/Lightswitch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +20,8 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -50,7 +34,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2679" />
+          <entry key="JAVA" value="3282" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -61,12 +45,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ControlServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+            <state relative-caret-position="65">
+              <caret line="87" column="28" lean-forward="true" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2161#2162#0" expanded="true" />
-                <element signature="e#2187#2188#0" expanded="true" />
+                <element signature="e#2329#2330#0" expanded="true" />
+                <element signature="e#2369#2370#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,8 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,13 +154,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544467965153" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RemoteServer" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544489725175" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -223,17 +207,18 @@
       <workItem from="1543773730855" duration="13383000" />
       <workItem from="1543796062432" duration="205000" />
       <workItem from="1544461356617" duration="6708000" />
+      <workItem from="1544486342479" duration="3369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20296000" />
+    <option name="totallyTimeSpent" value="23665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="6" width="1612" height="1013" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2564433" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25966495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -242,7 +227,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32992035" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -339,30 +324,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/remoteInterfaceEngine.java">
+    <entry file="file://$PROJECT_DIR$/src/remoteInterfaceEngine.java" />
+    <entry file="file://$PROJECT_DIR$/src/remoteInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/lightswitchServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding>
-            <element signature="e#121#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/remoteInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.policy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        <state relative-caret-position="170">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -373,10 +340,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lightswitchServer.java">
+    <entry file="file://$PROJECT_DIR$/src/server.policy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        <state relative-caret-position="68">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -385,12 +352,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ControlServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
+        <state relative-caret-position="65">
+          <caret line="87" column="28" lean-forward="true" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2187#2188#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2369#2370#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 public class ControlServer {
@@ -20,6 +22,8 @@ public class ControlServer {
     private JButton light3;
     //End of GUI variables
     private enum Mode {OFF, ON, NOTCONNECTED}
+    private Mode[] lightstatus = new Mode[10];
+    private ConcurrentHashMap<Integer, JButton> lights;
 
     public ControlServer() {
         //constructor
@@ -32,7 +36,19 @@ public class ControlServer {
             light7.addActionListener(new buttonAction());
             light8.addActionListener(new buttonAction());
             light9.addActionListener(new buttonAction());
-            startServers();
+
+            lights = new ConcurrentHashMap();
+            lights.put(1, light1);
+            lights.put(2, light2);
+            lights.put(3, light3);
+            lights.put(4, light4);
+            lights.put(5, light5);
+            lights.put(6, light6);
+            lights.put(7, light7);
+            lights.put(8, light8);
+            lights.put(9, light9);
+        startServers();
+
     }
 
     private class buttonAction implements ActionListener {
@@ -40,35 +56,50 @@ public class ControlServer {
         public void actionPerformed(ActionEvent e) {
             JButton tempB = (JButton)e.getSource();
             int ID = Integer.parseInt(tempB.getName());
-            if(tempB.getText().compareTo("Light "+ tempB.getName() +" ON") == 0) {
-                tempB.setText("Light "+ tempB.getName() +" OFF");
-                sendLightStatus(ID, Mode.OFF);
-            }
-            else if (tempB.getText().compareTo("Light "+ tempB.getName() +" OFF") == 0) {
-                tempB.setText("Light "+ tempB.getName() +" ON");
-                sendLightStatus(ID, Mode.ON);
-            }
-            else {
-                tempB.setText("Light "+ tempB.getName() +" ON");
-                sendLightStatus(ID, Mode.ON);
-            }
+            toggleLightstatus(ID);
         }
 
+    }
+
+    public void toggleLightstatus(int ID) {
+        int arrayid = ID -1;
+        if(lightstatus[arrayid] == Mode.ON) {
+            lights.get(ID).setText("Light "+ ID +" ON");
+            lightstatus[arrayid] = Mode.OFF;
+            sendLightStatus(ID, Mode.OFF);
+        }
+        else if (lightstatus[arrayid] == Mode.OFF) {
+            lights.get(ID).setText("Light "+ ID +" OFF");
+            lightstatus[arrayid] = Mode.ON;
+            sendLightStatus(ID, Mode.ON);
+        }
+        else {
+            lights.get(ID).setText("Light "+ ID +" ON");
+            lightstatus[arrayid] = Mode.ON;
+            sendLightStatus(ID, Mode.ON);
+        }
     }
 
     public void sendLightStatus(int ID, Mode input) {
         //TODO: Send change to lightswitches
 
+
+    }
+    //Getter for Lightstatus
+    public Mode getLightstatus(int ID) {
+        return   lightstatus[ID-1];
     }
 
+
+    //Getter for temperature
     public String getTemperature() {
         return temperature.getText();
     }
 
     private void startServers() {
         //TODO: Start your RMI- and socket-servers here
-    }
 
+    }
 
 
     public static void main(String[] args) {
