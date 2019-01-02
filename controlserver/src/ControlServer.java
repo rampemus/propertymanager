@@ -64,12 +64,12 @@ public class ControlServer {
     public void toggleLightstatus(int ID) {
         int arrayid = ID -1;
         if(lightstatus[arrayid] == Mode.ON) {
-            lights.get(ID).setText("Light "+ ID +" ON");
+            lights.get(ID).setText("Light "+ ID +" OFF");
             lightstatus[arrayid] = Mode.OFF;
             sendLightStatus(ID, Mode.OFF);
         }
         else if (lightstatus[arrayid] == Mode.OFF) {
-            lights.get(ID).setText("Light "+ ID +" OFF");
+            lights.get(ID).setText("Light "+ ID +" ON");
             lightstatus[arrayid] = Mode.ON;
             sendLightStatus(ID, Mode.ON);
         }
