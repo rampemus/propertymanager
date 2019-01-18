@@ -1,3 +1,4 @@
+package controlserver;
 
 public class RMIServer {
 

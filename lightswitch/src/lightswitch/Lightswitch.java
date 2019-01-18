@@ -1,3 +1,4 @@
+package lightswitch;
 
 import javax.swing.*;
 import java.awt.*;

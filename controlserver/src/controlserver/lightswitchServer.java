@@ -1,4 +1,4 @@
-
+package controlserver;
 
 public class lightswitchServer extends Thread {
 

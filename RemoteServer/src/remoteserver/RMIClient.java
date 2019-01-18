@@ -1,3 +1,4 @@
+package remoteserver;
 
 public class RMIClient {
 
