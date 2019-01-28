@@ -23,8 +23,10 @@ public class ControlServer {
     private JButton light6;
     private JButton light3;
     //End of GUI variables
-    private enum Mode {OFF, ON, NOTCONNECTED}
+
+    public enum Mode {OFF, ON, NOTCONNECTED}
     private Mode[] lightstatus = new Mode[10];
+    private LightswitchServer[] lightservers = new LightswitchServer[10];
     private ConcurrentHashMap<Integer, JButton> lights;
 
     public ControlServer() {
@@ -49,7 +51,12 @@ public class ControlServer {
             lights.put(7, light7);
             lights.put(8, light8);
             lights.put(9, light9);
-        startServers();
+
+            for ( int i = 0; i < 10; i++) {
+                lightstatus[i] = Mode.NOTCONNECTED;
+            }
+
+            startServers();
 
     }
 
@@ -68,28 +75,31 @@ public class ControlServer {
         if(lightstatus[arrayid] == Mode.ON) {
             lights.get(ID).setText("Light "+ ID +" OFF");
             lightstatus[arrayid] = Mode.OFF;
-            sendLightStatus(ID, Mode.OFF);
+            sendLightStatus(ID);
         }
         else if (lightstatus[arrayid] == Mode.OFF) {
             lights.get(ID).setText("Light "+ ID +" ON");
             lightstatus[arrayid] = Mode.ON;
-            sendLightStatus(ID, Mode.ON);
+            sendLightStatus(ID);
         }
         else {
             lights.get(ID).setText("Light "+ ID +" ON");
             lightstatus[arrayid] = Mode.ON;
-            sendLightStatus(ID, Mode.ON);
+            sendLightStatus(ID);
         }
     }
 
-    public void sendLightStatus(int ID, Mode input) {
+    public void sendLightStatus(int ID) {
         //TODO: Send change to lightswitches
+        lightservers[ID].sendNewState();
+    }
 
-
+    public void initLightStatus(int ID) {
+        lightstatus[ID-1] = Mode.OFF;
     }
     //Getter for Lightstatus
     public Mode getLightstatus(int ID) {
-        return   lightstatus[ID-1];
+        return lightstatus[ID-1];
     }
 
 
@@ -100,7 +110,10 @@ public class ControlServer {
 
     private void startServers() {
         //TODO: Start your RMI- and socket-servers here
-
+        for ( int i = 0 ; i < lightservers.length; i++) {
+            lightservers[i] = new LightswitchServer("localhost", 50000 + i, this);
+            lightservers[i].start();
+        }
     }
 
 
@@ -114,6 +127,7 @@ public class ControlServer {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
     }
 
 }
