@@ -4,7 +4,10 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class LightswitchServer extends Thread {
+public class LightswitchServer extends Thread implements Serializable {
+
+    private static final long serialVersionUID = 7213283645866351676L;
+
     private String ip;
     private int port;
     private ServerSocket ss;

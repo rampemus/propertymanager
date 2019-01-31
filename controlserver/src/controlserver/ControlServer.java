@@ -3,11 +3,23 @@ package controlserver;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+import RemoteServer.clientInterface;
+import RemoteServer.RMIClient;
 
 
-public class ControlServer {
+public class ControlServer implements Serializable {
+
+    private static final long serialVersionUID = 7213783635860354476L;
 
     //GUI variables, Do not edit
     private JTextField temperature;
@@ -29,34 +41,37 @@ public class ControlServer {
     private LightswitchServer[] lightservers = new LightswitchServer[10];
     private ConcurrentHashMap<Integer, JButton> lights;
 
+    private RMIServer rmiServer;
+    private clientInterface client;
+
     public ControlServer() {
         //constructor
-            light1.addActionListener(new buttonAction());
-            light2.addActionListener(new buttonAction());
-            light3.addActionListener(new buttonAction());
-            light4.addActionListener(new buttonAction());
-            light5.addActionListener(new buttonAction());
-            light6.addActionListener(new buttonAction());
-            light7.addActionListener(new buttonAction());
-            light8.addActionListener(new buttonAction());
-            light9.addActionListener(new buttonAction());
+        light1.addActionListener(new buttonAction());
+        light2.addActionListener(new buttonAction());
+        light3.addActionListener(new buttonAction());
+        light4.addActionListener(new buttonAction());
+        light5.addActionListener(new buttonAction());
+        light6.addActionListener(new buttonAction());
+        light7.addActionListener(new buttonAction());
+        light8.addActionListener(new buttonAction());
+        light9.addActionListener(new buttonAction());
 
-            lights = new ConcurrentHashMap();
-            lights.put(1, light1);
-            lights.put(2, light2);
-            lights.put(3, light3);
-            lights.put(4, light4);
-            lights.put(5, light5);
-            lights.put(6, light6);
-            lights.put(7, light7);
-            lights.put(8, light8);
-            lights.put(9, light9);
+        lights = new ConcurrentHashMap();
+        lights.put(1, light1);
+        lights.put(2, light2);
+        lights.put(3, light3);
+        lights.put(4, light4);
+        lights.put(5, light5);
+        lights.put(6, light6);
+        lights.put(7, light7);
+        lights.put(8, light8);
+        lights.put(9, light9);
 
-            for ( int i = 0; i < 10; i++) {
-                lightstatus[i] = Mode.NOTCONNECTED;
-            }
+        for ( int i = 0; i < 10; i++) {
+            lightstatus[i] = Mode.NOTCONNECTED;
+        }
 
-            startServers();
+        startServers();
 
     }
 
@@ -89,8 +104,11 @@ public class ControlServer {
         }
     }
 
+    /**
+     * sends lightstatus to lightswitch that has certain ID
+     * @param ID
+     */
     public void sendLightStatus(int ID) {
-        //TODO: Send change to lightswitches
         lightservers[ID].sendNewState();
     }
 
@@ -109,11 +127,23 @@ public class ControlServer {
     }
 
     private void startServers() {
-        //TODO: Start your RMI- and socket-servers here
+        //Start socket-servers here
         for ( int i = 0 ; i < lightservers.length; i++) {
             lightservers[i] = new LightswitchServer("localhost", 50000 + i, this);
             lightservers[i].start();
         }
+
+        if (System.getSecurityManager() == null) {
+            System.setSecurityManager(new SecurityManager());
+        }
+        //TODO: Start RMI-server
+        try {
+            RMIServer server = new RMIServer();
+            Naming.rebind("RMIControlServer", server);
+        } catch (MalformedURLException | RemoteException e){
+            e.printStackTrace();
+        }
+
     }
 
 

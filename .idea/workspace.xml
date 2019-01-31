@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56d09358-d627-4b93-b3b1-aa4677502e19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controlserver/src/controlserver/serverInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteServer/RemoteServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteServer/RemoteServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteServer/src/remoteserver/RMIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteServer/src/RemoteServer/RMIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteServer/src/remoteserver/RemoteServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteServer/src/RemoteServer/RemoteServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteServer/src/remoteserver/WWWServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteServer/src/RemoteServer/WWWServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteServer/src/remoteserver/remoteInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteServer/src/RemoteServer/clientInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlserver/controlserver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/controlserver/controlserver.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlserver/src/controlserver/lightswitchServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/controlserver/src/controlserver/LightswitchServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightswitch/src/lightswitch/Lightswitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/lightswitch/src/lightswitch/Lightswitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlserver/src/controlserver/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/controlserver/src/controlserver/RMIServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlserver/src/controlserver/lightswitchServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/controlserver/src/controlserver/lightswitchServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,33 +32,37 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="form" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="14" />
-          <entry key="policy" value="1" />
+          <entry key="java" value="29" />
+          <entry key="policy" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="14" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="28" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5333" />
+          <entry key="dummy" value="6" />
+          <entry key="java" value="8098" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5333" />
+          <entry key="JAVA" value="8098" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -60,29 +71,44 @@
     <favorites_list name="propertymanager" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="91" column="31" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="31" />
+            <state relative-caret-position="184">
+              <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
               <folding>
-                <element signature="e#2926#2927#0" expanded="true" />
-                <element signature="e#2969#2970#0" expanded="true" />
-                <element signature="e#3150#3151#0" expanded="true" />
-                <element signature="e#3192#3193#0" expanded="true" />
-                <element signature="e#3143#3144#0" expanded="true" />
-                <element signature="e#3187#3188#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3462#3463#0" expanded="true" />
+                <element signature="e#3509#3510#0" expanded="true" />
+                <element signature="e#3552#3553#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+                <element signature="e#3666#3667#0" expanded="true" />
+                <element signature="e#3706#3707#0" expanded="true" />
+                <element signature="e#3774#3775#0" expanded="true" />
+                <element signature="e#3818#3819#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/RemoteServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/LightswitchServer.java">
+        <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/RMIServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="154">
+              <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,10 +117,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lightswitch/src/lightswitch/Lightswitch.java">
+        <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/RMIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+            <state relative-caret-position="167">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/serverInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +142,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/clientInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -117,6 +173,11 @@
       <find>sendChange</find>
       <find>said</find>
       <find>toggleLightstatus</find>
+      <find>create</find>
+      <find>RMIServer</find>
+      <find>RMIServer()</find>
+      <find>startServers</find>
+      <find>RMIClient</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -129,17 +190,63 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/controlserver/src/controlserver/lightswitchServer.java" />
-        <option value="$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java" />
         <option value="$PROJECT_DIR$/lightswitch/src/lightswitch/Lightswitch.java" />
+        <option value="$PROJECT_DIR$/RemoteServer/src/RemoteServer/clientInterface.java" />
+        <option value="$PROJECT_DIR$/RemoteServer/src/RemoteServer/RMIClient.java" />
         <option value="$PROJECT_DIR$/controlserver/src/controlserver/LightswitchServer.java" />
+        <option value="$PROJECT_DIR$/controlserver/src/controlserver/serverInterface.java" />
+        <option value="$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java" />
+        <option value="$PROJECT_DIR$/RemoteServer/src/RemoteServer/RemoteServer.java" />
+        <option value="$PROJECT_DIR$/controlserver/src/controlserver/RMIServer.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="153" />
+    <option name="x" value="143" />
     <option name="y" value="23" />
-    <option name="width" value="1127" />
+    <option name="width" value="1137" />
     <option name="height" value="710" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>GeneralScala</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>TypeCheckCanBeMatch</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -147,6 +254,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controlserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controlserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controlserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controlserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="controlserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controlserver" type="462c0819:PsiDirectoryNode" />
+              <item name="ControlServer" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RemoteServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RemoteServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RemoteServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="RemoteServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -159,50 +320,49 @@
               <item name="controlserver" type="616d4139:PackageViewModuleNode" />
               <item name="controlserver" type="1f31426a:PackageElementNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
+              <item name="propertymanager" type="58d84e3e:PackageViewProjectNode" />
+              <item name="controlserver" type="616d4139:PackageViewModuleNode" />
+              <item name="controlserver" type="1f31426a:PackageElementNode" />
+              <item name="ControlServer" type="e9f4de52:FormNode" />
             </path>
             <path>
-              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="propertymanager" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lightswitch" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
+              <item name="propertymanager" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lightswitch" type="616d4139:PackageViewModuleNode" />
+              <item name="lightswitch" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lightswitch" type="462c0819:PsiDirectoryNode" />
+              <item name="propertymanager" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lightswitch" type="616d4139:PackageViewModuleNode" />
+              <item name="lightswitch" type="1f31426a:PackageElementNode" />
               <item name="Lightswitch" type="e9f4de52:FormNode" />
             </path>
             <path>
-              <item name="propertymanager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="propertymanager" type="58d84e3e:PackageViewProjectNode" />
+              <item name="RemoteServer" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="propertymanager" type="58d84e3e:PackageViewProjectNode" />
+              <item name="RemoteServer" type="616d4139:PackageViewModuleNode" />
+              <item name="RemoteServer" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="469" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548422813772" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548931803943" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,10 +376,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lightswitch">
+  <component name="RunManager" selected="Application.RemoteServer">
     <configuration name="ControlServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controlserver.ControlServer" />
       <module name="controlserver" />
+      <option name="VM_PARAMETERS" value="-Djava.security.policy=controlserver/src/server.policy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="controlserver.*" />
@@ -244,14 +405,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RemoteServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RemoteServer.RemoteServer" />
+      <module name="RemoteServer" />
+      <option name="VM_PARAMETERS" value="-Djava.security.policy=controlserver/src/server.policy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RemoteServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ControlServer" />
       <item itemvalue="Application.Lightswitch" />
+      <item itemvalue="Application.RemoteServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lightswitch" />
+        <item itemvalue="Application.RemoteServer" />
         <item itemvalue="Application.ControlServer" />
+        <item itemvalue="Application.Lightswitch" />
       </list>
     </recent_temporary>
   </component>
@@ -278,22 +455,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="153" y="23" width="1127" height="710" extended-state="0" />
+    <frame x="143" y="23" width="1137" height="710" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.50497514" side_tool="true" weight="0.12954545" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4950249" visible="true" weight="0.16866359" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4950249" visible="true" weight="0.22009133" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32847896" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.26537216" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.34951457" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.34951457" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -301,9 +479,9 @@
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32956383" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info active="true" anchor="right" x="0" y="0" width="241" height="510" id="Documentation" order="3" side_tool="true" visible="true" weight="0.14285715" />
+      <window_info anchor="right" x="0" y="0" width="241" height="510" id="Documentation" order="3" sideWeight="0.50161815" side_tool="true" visible="true" weight="0.3214612" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49838188" weight="0.3294606" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
@@ -334,69 +512,121 @@
     <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlserver/src/server.policy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlserver/controlserver.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RemoteServer/src/remoteserver/WWWServer.java">
+    <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/WWWServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RemoteServer/src/remoteserver/RMIClient.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RemoteServer/src/remoteserver/RemoteServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RemoteServer/src/remoteserver/remoteInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lightswitch/src/lightswitch/Lightswitch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="8">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java">
+    <entry file="file://$PROJECT_DIR$/controlserver/src/server.policy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.rmi/sun/rmi/registry/RegistryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="31" />
-          <folding>
-            <element signature="e#2926#2927#0" expanded="true" />
-            <element signature="e#2969#2970#0" expanded="true" />
-            <element signature="e#3150#3151#0" expanded="true" />
-            <element signature="e#3192#3193#0" expanded="true" />
-            <element signature="e#3143#3144#0" expanded="true" />
-            <element signature="e#3187#3188#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/LightswitchServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="120">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/clientInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/serverInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.rmi/sun/rmi/server/UnicastServerRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="390" selection-start-line="390" selection-end-line="390" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/ControlServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3462#3463#0" expanded="true" />
+            <element signature="e#3509#3510#0" expanded="true" />
+            <element signature="e#3552#3553#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3666#3667#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3774#3775#0" expanded="true" />
+            <element signature="e#3818#3819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/RemoteServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="25" column="57" lean-forward="true" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RemoteServer/src/RemoteServer/RMIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlserver/src/controlserver/RMIServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -406,9 +636,79 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>RemoteServer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
