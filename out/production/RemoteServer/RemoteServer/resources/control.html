@@ -1,0 +1,42 @@
+<!--This file is just copypasta for WWWServer-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Light switch web app!</title>
+    <style>
+        td {
+            padding: 10px;
+        }
+
+        .disabledField {
+            color:grey;
+        }
+
+        #temperature {
+            width:40px;
+        }
+    </style>
+</head>
+<body>
+<form action="/home" method="post">
+    <input id="temperature" type="text" name="temperature" value="0">
+<table>
+    <tr>
+        <td><input type="checkbox" name="light1" checked>light1</td>
+        <td class="disabledField"><input type="checkbox" name="light2">light2</td>
+        <td><input type="checkbox" name="light3">light3</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="light4">light4</td>
+        <td><input type="checkbox" name="light5">light5</td>
+        <td><input type="checkbox" name="light6">light6</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="light7">light7</td>
+        <td><input type="checkbox" name="light8">light8</td>
+        <td><input type="checkbox" name="light9">light9</td>
+    </tr>
+</table><input type="submit" value="Submit">
+</form>
+</body>
+</html>

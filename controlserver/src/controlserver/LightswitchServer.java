@@ -27,6 +27,10 @@ public class LightswitchServer extends Thread implements Serializable {
         this.controller = controlserver;
     }
 
+    public boolean isStarted() {
+        return started;
+    }
+
     private void initializeSocket() {
         try {
             System.out.println("Starts to listen port: " + port);
@@ -91,14 +95,12 @@ public class LightswitchServer extends Thread implements Serializable {
     }
 
     /**
-     * Recieves automaticly new state from controlserver and sends it
+     * Recieves automatically new state from controlserver and sends it
      */
     public void sendNewState() {
         try {
             out.writeInt(controller.getLightstatus(lightID).ordinal());
             out.flush();
         } catch (IOException e){}
-
-        System.out.println("Sent the new light status " + controller.getLightstatus(lightID));
     }
 }

@@ -85,6 +85,31 @@ public class ControlServer implements Serializable {
 
     }
 
+    /**
+     * This will send lightStatusArray that has the temperature in slot 0
+     * and light with index 1 in slot 1.
+     * @return
+     */
+    public int[] getLightStatusArray() {
+        int[] result = new int[10];
+        for (int i = 0; i < 9; i++) {
+            System.out.println("Light" + i + ":" + lightstatus[i].ordinal());
+            result[i+1] = lightstatus[i].ordinal();
+        }
+        result[0] = Integer.parseInt(temperature.getText());
+        return result;
+    }
+
+    /**
+     * Sets temperature
+     * TODO: update temperature in a room also
+     * @param value
+     */
+    public void setTemperature(int value) {
+        temperature.setText(value + "");
+        System.out.println("New temperature will be" + value);
+    }
+
     public void toggleLightstatus(int ID) {
         int arrayid = ID -1;
         if(lightstatus[arrayid] == Mode.ON) {
@@ -96,12 +121,21 @@ public class ControlServer implements Serializable {
             lights.get(ID).setText("Light "+ ID +" ON");
             lightstatus[arrayid] = Mode.ON;
             sendLightStatus(ID);
-        }
-        else {
+        } else {
             lights.get(ID).setText("Light "+ ID +" ON");
             lightstatus[arrayid] = Mode.ON;
             sendLightStatus(ID);
         }
+        System.out.println("Printing lightstatus-array after update");
+        for ( int i = 1; i < 10; i++) {
+            System.out.println("lightstatus" + i + ": " + lightstatus[i-1]);
+        }
+    }
+
+    private void markAsNotConnected(int ID) {
+        int arrayid = ID -1;
+        lights.get(ID).setText("Light "+ ID +" N/A");
+        lightstatus[arrayid] = Mode.NOTCONNECTED;
     }
 
     /**
@@ -109,7 +143,12 @@ public class ControlServer implements Serializable {
      * @param ID
      */
     public void sendLightStatus(int ID) {
-        lightservers[ID].sendNewState();
+        if ( lightservers[ID].isStarted()) {
+            lightservers[ID].sendNewState();
+        } else {
+            //todo:change status to NOTCONNECTED
+            markAsNotConnected(ID);
+        }
     }
 
     public void initLightStatus(int ID) {
@@ -138,7 +177,7 @@ public class ControlServer implements Serializable {
         }
         //TODO: Start RMI-server
         try {
-            RMIServer server = new RMIServer();
+            RMIServer server = new RMIServer(this);
             Naming.rebind("RMIControlServer", server);
         } catch (MalformedURLException | RemoteException e){
             e.printStackTrace();

@@ -4,19 +4,29 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import controlserver.serverInterface;
 
+/**
+ * For future use. This implementation is for making socket connection to http-client
+ *
+ * Not part of the exercise, please ignore
+ */
 public class RMIClient extends UnicastRemoteObject implements clientInterface, Runnable {
 
     serverInterface server;
-    clientInterface comp;
+    RemoteServer host;
 
-    public RMIClient(serverInterface server) throws RemoteException {
+    public RMIClient(serverInterface server, RemoteServer host) throws RemoteException {
         //Security manager is needed. Remember policy file and VM parameter again.
         if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());
         }
+
+        this.host = host;
+
+        System.out.println("Host added, everything is fine");
+
         //TODO: RMI client connection
         this.server = server;
-        server.sendInitStates();
+        server.receiveInitStates();
 
         //TODO: Create needed requests to control server
     }
@@ -35,8 +45,9 @@ public class RMIClient extends UnicastRemoteObject implements clientInterface, R
 
     @Override
     public void run() {
+        //for future socket listening
         try {
-            Thread.sleep(100);
+            Thread.sleep(1000);
         } catch (InterruptedException e){
 
         }

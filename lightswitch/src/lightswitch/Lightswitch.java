@@ -24,7 +24,6 @@ public class Lightswitch extends Thread {
 
     public Lightswitch() {
 
-
         System.out.println("Saying to the lightserver ID: " + ID);
         connectSwitch(ID);
 
@@ -34,7 +33,7 @@ public class Lightswitch extends Thread {
     protected void connectSwitch(int ID) {
         try {
             //for now everything will happen in ports 50000-50010
-            //TODO: only use port 50000 for initializing
+            //TODO: use non-blocking socket connection
             s = new Socket("localhost", 50000 + ID);
             //now we use this port for everything and it depends on the ID
 
