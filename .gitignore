@@ -39,3 +39,5 @@ out/production/controlserver/com/intellij/uiDesigner/core/DimensionInfo.class
 out/production/controlserver/com/intellij/uiDesigner/core/AbstractLayout.class
 lightswitch/lightswitch.iml
 .idea/*
+*.class
+*.iml
